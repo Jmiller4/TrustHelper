@@ -1,2 +1,10 @@
 # TrustTool
-Tool for analyzing trust networks on twitter
+A tool for analyzing trust networks on twitter, and for validating/ exploring the ideas presented in Verifying Trust as a Social Intersection (Immorlica * *et al* * 2019) 
+
+**Atomic Operation:** the atomic operation performed by this bot will be to analyze the relationship two twitter users have, in order to approximate the level of trust between the two of them. To do so, the bot will see if the users are following each other, and how often they favorite, reply to, and retween each other's posts. Ideally, how these factors are weighted will be configured by the user in an understandable and intuitive GUI.
+
+**Trust Networks:** We can use the above operation to create a weighted subset of the twitter graph. From there, we can observe "paths of trust" along the graph. Hopefully, this tool will be able to either analyze paths of trust according to a notion of Max Flow, or according to a more probabilistic notion. It would also be interesting to let the user configure their "maximum meaningful path", or something of that sort, in the GUI (or, let the user choose their own "trust decay rate").
+
+**The Actual Tool:** This tool could be used to audit specific account who a user might be suspicious of. It might also be useful as a tool running in the background, that could automatically alert a user to a tweet from an untrusted source. Speficically, anecdotal evidence suggests that people are usually good at sniffing out disinformation from sources that don't align with their personal/political views, but have a harder time spotting disinformation from a source that they generally agree with. Another interesting application would be to find accounts who a user * *should* * trust, despite possibly being on the other side of the political spectrum. Lastly, it might be interesting simply for the opportunity it provides to analyze Twitter user behavior.
+
+**Limitations:** Two twitter accounts interacting heavily is not always an indicator of trust. For example, accounts often reply or retweet each other in order to argue or refute each others' claims. 
