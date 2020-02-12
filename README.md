@@ -1,4 +1,4 @@
-# TrustTool
+# TrustHelper
 A tool for analyzing trust networks on twitter, and for validating/ exploring the ideas presented in Verifying Trust as a Social Intersection (Immorlica *et al* 2019) 
 
 **Atomic Operation:** the atomic operation performed by this bot will be to analyze the relationship two twitter users have, in order to approximate the level of trust between the two of them. To do so, the bot will see if the users are following each other, and how often they favorite, reply to, and retween each other's posts. Ideally, how these factors are weighted will be configured by the user in an understandable and intuitive GUI.
